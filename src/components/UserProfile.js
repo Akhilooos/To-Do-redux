@@ -29,7 +29,7 @@ const UserProfile = () => {
               <h3 className="text-xl font-bold">Firstname: {eachUser.name.first}</h3>
               <h3 className="text-xl font-bold">Lastname: {eachUser.name.last}</h3>
               <p>Email: {eachUser.email}</p>
-              <img src={eachUser.picture.medium} alt={eachUser.name.first} className="w-32 h-32 rounded-full mx-auto mt-4"/>
+              <img src={eachUser.picture} alt={eachUser.name} className="w-32 h-32 rounded-full mx-auto mt-4"/>
             </div>
           );
         })}
