@@ -18,9 +18,15 @@ const ToDoApp = () => {
 
  const handleTaskStatusChange = (index) => {
     const newTasks = [...tasks];
-    newTasks[index].status = newTasks[index].status === "Pending" ? "Completed" : "Pending";
+    if(newTasks[index].status === "Pending"){
+        newTasks[index].status = "Completed";
+    }
+    else{
+        newTasks[index].status = "Pending";
+    }
     setTasks(newTasks);
- };
+};
+
 
  return (
     <div className="container mx-auto p-4">
